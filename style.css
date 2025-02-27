@@ -1,0 +1,89 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+/* Task Input Section */
+.task-input {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+}
+
+.task-input input, .task-input textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+
+.task-input button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Task List */
+.task-list {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task.completed {
+    text-decoration: line-through;
+    background: #ddd;
+}
+
+/* Buttons */
+.complete-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .task-input, .task-list {
+        width: 100%;
+    }
+}
